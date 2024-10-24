@@ -1,0 +1,16 @@
+{
+  "name": "07-apifetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consumoAPI.js",
+  "scripts": {
+    "start": "node consumoAPI.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
