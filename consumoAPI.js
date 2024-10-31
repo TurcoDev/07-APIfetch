@@ -1,9 +1,11 @@
 import fetch from 'node-fetch';
+import escribirAlgo2, { getUsersExternal, escribirAlgo } from "./randomUserAPI.js";
 
-// Promesas utilizando .THEN
-// fetch('https://randomuser.me/api/?results=5')
-//   .then(response => response.json())
-//   .then(data => console.log(data));
+getUsersExternal(2);
+
+// escribirAlgo();
+
+// escribirAlgo2();
 
 
 // promesas utilizando AWAIT
@@ -38,7 +40,7 @@ async function getPokemon() {
   const data = await response.json();
   // console.log(data.results);
   const pokemones = data.results;
-  // console.log(pokemones);
+  // console.log("******************* POKEMONES **********************");
   for (let index = 0; index < pokemones.length; index++) {
     const pokemon = pokemones[index];
     const response2 = await fetch(pokemon.url);
@@ -56,4 +58,4 @@ async function getPokemon() {
   }
 }
 
-getPokemon();
+// getPokemon();
